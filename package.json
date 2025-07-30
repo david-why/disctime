@@ -1,11 +1,11 @@
 {
   "name": "disctime",
-  "module": "index.ts",
+  "module": "index.tsx",
   "type": "module",
   "private": true,
   "scripts": {
     "dev": "bun run --hot dev.ts",
-    "build": "bun build index.ts --target=bun --outdir=dist",
+    "build": "bun build index.tsx --target=browser --outdir=dist",
     "start": "bun run dev.ts",
     "deploy": "wrangler deploy",
     "deploy:dev": "wrangler deploy --env development",
