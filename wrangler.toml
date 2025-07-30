@@ -1,6 +1,6 @@
 # Wrangler configuration for Cloudflare Workers
 name = "disctime-api"
-main = "index.ts"
+main = "index.tsx"
 compatibility_date = "2024-01-01"
 
 # Configure environment variables (optional)
