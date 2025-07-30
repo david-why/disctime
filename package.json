@@ -1,0 +1,26 @@
+{
+  "name": "disctime",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "bun run --hot dev.ts",
+    "build": "bun build index.ts --target=bun --outdir=dist",
+    "start": "bun run dev.ts",
+    "deploy": "wrangler deploy",
+    "deploy:dev": "wrangler deploy --env development",
+    "deploy:prod": "wrangler deploy --env production",
+    "preview": "wrangler dev",
+    "logs": "wrangler tail"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "wrangler": "^4.26.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "hono": "^4.8.10"
+  }
+}

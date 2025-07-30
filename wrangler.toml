@@ -1,0 +1,18 @@
+# Wrangler configuration for Cloudflare Workers
+name = "disctime-api"
+main = "index.ts"
+compatibility_date = "2024-01-01"
+
+# Configure environment variables (optional)
+[vars]
+ENVIRONMENT = "production"
+
+# Development environment
+[env.development]
+name = "disctime-api-dev"
+vars = { ENVIRONMENT = "development" }
+
+# Production environment (default)
+[env.production]
+name = "disctime-api"
+vars = { ENVIRONMENT = "production" }
